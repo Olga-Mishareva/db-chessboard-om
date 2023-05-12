@@ -1,0 +1,14 @@
+.chessboard {
+  list-style: none;
+  padding: 1rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(8, 42px);
+  grid-template-rows: repeat(8, 42px);
+  justify-content: center;
+}
+
+.chessboard__item {
+  border: 1px solid black;
+  background-color: #00ccff;
+}
