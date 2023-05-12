@@ -10,6 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Chessboard />} />
         <Route path="/chessboard/start/:start" element={<Chessboard />} />
+        <Route path="*" element={<p>404</p>}></Route>
       </Routes>
       <footer></footer>
     </div>
