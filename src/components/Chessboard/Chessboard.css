@@ -10,5 +10,5 @@
 
 .chessboard__item {
   border: 1px solid black;
-  background-color: #00ccff;
+  /* background-color: #00ccff; */
 }
