@@ -8,7 +8,16 @@
   justify-content: center;
 }
 
-.chessboard__item {
-  border: 1px solid black;
-  /* background-color: #00ccff; */
+@media screen and (min-width: 580px) {
+  .chessboard {
+    grid-template-columns: repeat(8, 60px);
+    grid-template-rows: repeat(8, 60px);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .chessboard {
+    grid-template-columns: repeat(8, 70px);
+    grid-template-rows: repeat(8, 70px);
+  }
 }
