@@ -1,20 +1,6 @@
-const chessboardCages = [
-  "a8",
-  "b8",
-  "c8",
-  "d8",
-  "e8",
-  "g8",
-  "f8",
-  "h8",
-  "a7",
-  "b7",
-  "c7",
-  "d7",
-  "e7",
-  "g7",
-  "f7",
-  "h7",
-];
+const chessboardHorizontal = [8, 7, 6, 5, 4, 3, 2, 1];
+const chessboardHVertical = ["a", "b", "c", "d", "e", "f", "g", "h"];
 
-export default chessboardCages;
+const verticalMatch = { a: 1, b: 2, c: 3, d: 4, e: 5, f: 6, g: 7, h: 8 };
+
+export { chessboardHorizontal, chessboardHVertical, verticalMatch };

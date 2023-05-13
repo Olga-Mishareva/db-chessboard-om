@@ -8,8 +8,9 @@ function App() {
     <div className="page">
       <header className="header"></header>
       <Routes>
-        <Route path="/" element={<Chessboard />} />
-        <Route path="/chessboard/start/:start" element={<Chessboard />} />
+        <Route path="/chessboard" element={<Chessboard />} />
+        <Route path="/chessboard?start=" element={<Chessboard />} />
+        <Route path="*" element={<p>404</p>}></Route>
       </Routes>
       <footer></footer>
     </div>
