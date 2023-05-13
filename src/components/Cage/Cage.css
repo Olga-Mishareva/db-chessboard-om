@@ -1,10 +1,10 @@
 .cage {
-  /* text-decoration: none; */
   border: none;
   margin: 0;
   width: 100%;
   height: 100%;
   color: black;
+  font-size: 1.1em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +13,11 @@
 
 .cage:hover {
   cursor: pointer;
-  opacity: 0.9;
+  opacity: 0.8;
+}
+
+.cage--dark {
+  background-color: #0099ff;
 }
 
 .cage--start {
@@ -23,4 +27,10 @@
 
 .cage--next {
   color: white;
+}
+
+@media screen and (min-width: 580px) {
+  .cage {
+    font-size: 1.5em;
+  }
 }
