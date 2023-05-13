@@ -1,5 +1,6 @@
 .cage {
-  text-decoration: none;
+  /* text-decoration: none; */
+  border: none;
   margin: 0;
   width: 100%;
   height: 100%;
@@ -7,9 +8,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #00ccff;
 }
 
-.cage.active {
+.cage:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.cage--start {
   font-weight: 500;
   color: yellow;
+}
+
+.cage--next {
+  color: white;
 }
