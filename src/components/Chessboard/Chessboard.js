@@ -42,21 +42,23 @@ function Chessboard() {
     ]);
   }, [currentPosition]);
 
-  console.log(nextSteps);
-
-  console.log(currentPosition);
-
   return (
     <ul className="chessboard">
       {chessboardHorizontal.map((column) => {
         return chessboardHVertical.map((row, i) => (
-          <li className="chessboard__item" key={`${row}${column}`}>
+          <li key={`${row}${column}`}>
             <Cage
               startPosition={`${row}${column}`}
               posX={i + 1}
               posY={column}
               nextSteps={nextSteps}
               handlePosition={handlePosition}
+              isDark={
+                ((i + 1) % 2 === 0 && column % 2 === 0) ||
+                ((i + 1) % 2 !== 0 && column % 2 !== 0)
+                  ? true
+                  : false
+              }
             />
           </li>
         ));
