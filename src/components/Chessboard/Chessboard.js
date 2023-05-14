@@ -3,11 +3,7 @@ import { useSearchParams } from "react-router-dom";
 
 import "./Chessboard.css";
 import Cage from "../Cage/Cage";
-import {
-  chessboardHorizontal,
-  chessboardHVertical,
-  verticalMatch,
-} from "../constants/chessboard-cages";
+import { verticalMatch } from "../constants/chessboard-cages";
 
 function Chessboard() {
   const [params, _] = useSearchParams();
@@ -30,19 +26,17 @@ function Chessboard() {
     setCages(chessboard);
   }
 
-  // console.log(cages);
-
   useEffect(() => {
-    console.log(params.get("start"));
-    setCurrentPosition({
-      posX: verticalMatch[params.get("start").slice(0, 1)],
-      posY: Number(params.get("start").slice(1)),
-    });
+    if (params.get("start")) {
+      setCurrentPosition({
+        posX: verticalMatch[params.get("start").slice(0, 1)],
+        posY: Number(params.get("start").slice(1)),
+      });
+    }
     handleCages();
   }, []);
 
   function handlePosition(posX, posY) {
-    // console.log(posX, posY);
     setCurrentPosition({
       posX: posX,
       posY: posY,
@@ -67,7 +61,9 @@ function Chessboard() {
       {cages.map((cage) => (
         <li key={`${cage.posY}${cage.posX}`}>
           <Cage
-            startPosition={`${verticalMatch[cage.posY]}${cage.posX}`}
+            startPosition={`${Object.entries(verticalMatch)[cage.posX - 1][0]}${
+              cage.posY
+            }`}
             posX={cage.posX}
             posY={cage.posY}
             nextSteps={nextSteps}
