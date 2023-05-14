@@ -1,0 +1,12 @@
+.no-match {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 2rem;
+}
