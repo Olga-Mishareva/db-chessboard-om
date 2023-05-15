@@ -34,7 +34,7 @@ function Chessboard() {
       });
     }
     handleCages();
-  }, []);
+  }, [params]);
 
   function handlePosition(posX, posY) {
     setCurrentPosition({
