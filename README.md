@@ -1,6 +1,6 @@
 # Darstellung der möglichen Züge eines Springers
 
-[See the projekt →](https://olga-mishareva.github.io/db-chessboard-om/).
+[See the projekt →](https://olga-mishareva.github.io/db-chessboard-om/)
 
 ## Available Scripts
 
