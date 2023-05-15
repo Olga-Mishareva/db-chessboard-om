@@ -1,1 +1,17 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 0 1rem;
+}
 
+.header {
+  text-align: center;
+}
+
+.footer {
+  min-height: 50px;
+  text-align: end;
+  color: grey;
+}
