@@ -8,6 +8,8 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <HashRouter>
+      {" "}
+      {/*  für Darstellung in GitHub Pages */}
       <App />
     </HashRouter>
   </React.StrictMode>
