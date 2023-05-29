@@ -3,7 +3,7 @@ import { useSearchParams } from "react-router-dom";
 
 import "./Chessboard.css";
 import Cage from "../Cage/Cage";
-import { verticalMatch } from "../../../constants/chessboard-cages";
+import { verticalMatch } from "../../constants/chessboard-cages";
 
 function Chessboard() {
   const [params, _] = useSearchParams();
