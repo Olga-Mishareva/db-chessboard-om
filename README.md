@@ -1,6 +1,6 @@
 # Darstellung der möglichen Züge eines Springers
 
-[Schauen →](https://olga-mishareva.github.io/db-chessboard-om/#/chessboard?start)
+[Preview →](https://olga-mishareva.github.io/db-chessboard-om/#/chessboard?start)
 
 ---
 
