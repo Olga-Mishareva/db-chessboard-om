@@ -10,12 +10,14 @@ function App() {
       <header className="header">
         <h1>Mögliche Züge eines Springers</h1>
       </header>
-      <Routes>
-        <Route path="/" element={<NoMatch />} />
-        <Route path="/chessboard" element={<Chessboard />} />
-        <Route path="/chessboard?start" element={<Chessboard />} />
-        <Route path="*" element={<NoMatch />}></Route>
-      </Routes>
+      <main>
+        <Routes>
+          <Route path="/" element={<NoMatch />} />
+          <Route path="/chessboard" element={<Chessboard />} />
+          <Route path="/chessboard?start" element={<Chessboard />} />
+          <Route path="*" element={<NoMatch />}></Route>
+        </Routes>
+      </main>
       <footer className="footer">OM</footer>
     </div>
   );

@@ -1,5 +1,4 @@
-import { useEffect } from "react";
-import { Link, redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import "./NoMatch.css";
 
